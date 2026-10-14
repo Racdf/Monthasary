@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "question": "Where in the digital universe did our story first begin?",
+    "options": [
+      "At your hospital where you work 🏥",
+      "Inside Avakin Life 🏰✨",
+      "An Instagram direct message 💬"
+    ],
+    "correctIndex": 1,
+    "hint": "Think back to the virtual world where two avatars crossed paths! 💜"
+  },
+  {
+    "id": 2,
+    "question": "What is the secret nickname that belongs only to you in my heart?",
+    "options": [
+      "Langga 💜",
+      "Babe",
+      "Cutie"
+    ],
+    "correctIndex": 0,
+    "hint": "My favorite word in the entire Cebuano language! 🌸"
+  },
+  {
+    "id": 3,
+    "question": "What is my absolute favorite thing about you?",
+    "options": [
+      "That sweet, genuine laugh of yours 🌸",
+      "The comforting way you talk to me when my day has been heavy 💫",
+      "How effortlessly cute and clingy you get 🥺💜",
+      "Trick question: there isn't just one thing, it's everything 👑✨"
+    ],
+    "correctIndex": 3,
+    "hint": "Think carefully, my langga... could I ever pick just one single thing about you? 💜"
+  }
+]

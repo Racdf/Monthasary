@@ -1,0 +1,21 @@
+# MONTHSARY LETTER CHEST QUESTIONS
+# Format: Question, Options, and Correct Answer (0-indexed or marked with *)
+
+[Question 1]
+Where in the digital universe did our story first begin?
+A) At your hospital where you work 🏥
+B) Inside Avakin Life 🏰✨ [CORRECT]
+C) An Instagram direct message 💬
+
+[Question 2]
+What is the secret nickname that belongs only to you in my heart?
+A) Langga 💜 [CORRECT]
+B) Babe
+C) Cutie
+
+[Question 3]
+What is my absolute favorite thing about you?
+A) That sweet, genuine laugh of yours 🌸
+B) The comforting way you talk to me when my day has been heavy 💫
+C) How effortlessly cute and clingy you get 🥺💜
+D) Trick question: there isn't just one thing, it's everything 👑✨ [CORRECT]

@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  touch-action: manipulation;
+}
+
+/* Apple VisionOS / Liquid Glass styling */
+.liquid-glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(147, 51, 234, 0.05) 50%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 
+    0 20px 40px -15px rgba(0, 0, 0, 0.7),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.35),
+    inset 0 -1px 1px 0 rgba(147, 51, 234, 0.2);
+}
+
+.liquid-glass-interactive {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(168, 85, 247, 0.1) 50%,
+    rgba(20, 10, 30, 0.5) 100%
+  );
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 
+    0 10px 30px -10px rgba(147, 51, 234, 0.35),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.4),
+    inset 0 -1px 2px 0 rgba(168, 85, 247, 0.3);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.liquid-glass-interactive:hover {
+  border-color: rgba(216, 180, 254, 0.45);
+  box-shadow: 
+    0 15px 35px -5px rgba(168, 85, 247, 0.5),
+    0 0 25px rgba(192, 132, 252, 0.3),
+    inset 0 1px 2px 0 rgba(255, 255, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+.liquid-glass-interactive:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+/* Event Horizon accretion disc lighting */
+.event-horizon-glow {
+  box-shadow: 
+    0 0 25px 5px rgba(255, 255, 255, 0.7),
+    0 0 60px 15px rgba(192, 132, 252, 0.8),
+    0 0 120px 40px rgba(126, 34, 206, 0.6),
+    0 0 180px 70px rgba(88, 28, 135, 0.35);
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.shimmer-sweep {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-sweep::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.15) 50%,
+    transparent 100%
+  );
+  transform: translateX(-100%);
+  animation: shimmer 3.5s infinite;
+}
+
+/* ======================================================== */
+/* 7-SECOND SMOOTH HARDWARE-ACCELERATED SHATTER ANIMATION   */
+/* ======================================================== */
+@keyframes shardFly7s {
+  0% {
+    transform: translate3d(0, 0, 0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);
+    opacity: 1;
+  }
+  15% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 0.95;
+  }
+  85% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate3d(var(--target-x), var(--target-y), var(--target-z)) 
+               rotateX(var(--rot-x)) rotateY(var(--rot-y)) rotateZ(var(--rot-z)) 
+               scale(5.2);
+    opacity: 0;
+  }
+}
+
+.animate-shard-7s {
+  animation: shardFly7s 7s cubic-bezier(0.16, 0.85, 0.35, 1) forwards;
+}
+
+@keyframes shockwaveSmooth {
+  0% {
+    transform: scale(0.2);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(30);
+    opacity: 0;
+  }
+}
+
+.animate-shockwave-smooth {
+  animation: shockwaveSmooth 3s cubic-bezier(0.12, 0.8, 0.3, 1) forwards;
+}
+
+@keyframes shatterFlash {
+  0% { opacity: 0.8; }
+  100% { opacity: 0; }
+}
+
+.animate-shatter-flash {
+  animation: shatterFlash 0.6s ease-out forwards;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(147, 51, 234, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(168, 85, 247, 0.7);
+}
